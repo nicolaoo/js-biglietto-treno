@@ -22,11 +22,20 @@ console.log (prezzoScontoOver)
 
 
 if (eta > 65) {
+    let over65 = document.getElementById('prezzo-biglietto')
+    over65.innerHTML = prezzoScontoOver
     console.log('sconto eta 65')
 }
 else if (eta < 18) {
+    let under18 = document.getElementById('prezzo-biglietto')
+    under18.innerHTML=prezzoScontoUnder
     console.log('sconto eta 18')
 }
 else {
-
+    let prezzo = document.getElementById('prezzo-biglietto')
+    prezzo.innerHTML = prezzoBiglietto
+    console.log('altri prezzi')
 }
+
+// 7. Stampare in html il prezzo del biglietto
+
