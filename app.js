@@ -14,7 +14,19 @@ console.log(scontoUnder)
 let scontoOver = (prezzoBiglietto * 40) / 100
 console.log(scontoOver)
 // 6. Calcolare il prezzo scontato del biglietto in base ai dati sopra trovati
-let prezzoScontoUnder = prezzoBiglietto - scontoUnder
+let prezzoScontoUnder = ( prezzoBiglietto - scontoUnder)
 console.log(prezzoScontoUnder)
 let prezzoScontoOver = prezzoBiglietto - scontoOver
 console.log (prezzoScontoOver)
+
+
+
+if (eta > 65) {
+    console.log('sconto eta 65')
+}
+else if (eta < 18) {
+    console.log('sconto eta 18')
+}
+else {
+
+}
