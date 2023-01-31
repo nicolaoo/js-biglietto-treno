@@ -2,10 +2,10 @@
 let kmPercorsi = parseInt ( prompt ('Quanti km vuoi percorrere?'));
 console.log (kmPercorsi)
 // 2. Chiedre all'utente l'eta
-let eta = prompt ('Quanti anni hai?')
+let eta = parseInt (prompt ('Quanti anni hai?'))
 console.log(eta)
 // 3. Trovare il prezzo del biglietto (0.21€)
-let prezzoBiglietto = kmPercorsi * 0.21
+let prezzoBiglietto = parseInt( kmPercorsi * 0.21)
 console.log(prezzoBiglietto)
 // 4. inserire il 20% di sconto per gli under 18
 let scontoUnder = (prezzoBiglietto * 20) / 100
@@ -38,6 +38,8 @@ console.log (prezzoScontoOver)
 // }
 
 // 7. Stampare in html il prezzo del biglietto
+
+
 
 if (eta > 65) {
     console.log('eta maggiore di 65')
