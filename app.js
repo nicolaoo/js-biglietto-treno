@@ -22,18 +22,18 @@ console.log (prezzoScontoOver)
 
 if (eta > 65) {
     let sconto40 = document.getElementById('prezzo')
-    sconto40.innerHTML = prezzoScontoOver
+    sconto40.innerHTML = prezzoScontoOver + '' + '€'
 }
 
 else if (eta < 18){
     let sconto20 = document.getElementById('prezzo')
-    sconto20.innerHTML = prezzoScontoUnder 
+    sconto20.innerHTML = prezzoScontoUnder + '' + '€' 
     console.log('eta inore di 18')
 }
 
 else {
     let prezzoTrain = document.getElementById('prezzo')
-    prezzoTrain.innerHTML = prezzoBiglietto.toFixed(2)
+    prezzoTrain.innerHTML = prezzoBiglietto.toFixed(2) + '' + '€' 
     console.log ('ttuo il resto')
 }
 
@@ -47,10 +47,10 @@ else {
     kmTrain.innerHTML = kmPercorsi
 
     let scontoTrain20 = document.getElementById('sconto20')
-    scontoTrain20.innerHTML = scontoUnder 
+    scontoTrain20.innerHTML = scontoUnder + '' + '€' 
 
     let scontoTrain40 = document.getElementById('sconto40')
-    scontoTrain40.innerHTML = scontoOver
+    scontoTrain40.innerHTML = scontoOver + '' + '€'
     
 
 
