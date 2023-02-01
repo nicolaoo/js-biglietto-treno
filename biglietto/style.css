@@ -11,3 +11,7 @@
     background-size: cover;
     overflow: auto;
 }
+
+.card {
+    border-radius: 150px!important;
+}
