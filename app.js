@@ -1,5 +1,5 @@
 // 1. Chiedre all'utente i km che vuole percorrere
-let kmPercorsi = parseInt ( prompt ('Quanti km vuoi percorrere?'));
+ let kmPercorsi = parseInt ( prompt ('Quanti km vuoi percorrere?'));
 console.log (kmPercorsi)
 // 2. Chiedre all'utente l'eta
 let eta = parseInt (prompt ('Quanti anni hai?'))
@@ -20,6 +20,40 @@ let prezzoScontoOver = prezzoBiglietto - scontoOver
 console.log (prezzoScontoOver)
 
 
+if (eta > 65) {
+    let sconto40 = document.getElementById('prezzo')
+    sconto40.innerHTML = prezzoScontoOver
+}
+
+else if (eta < 18){
+    let sconto20 = document.getElementById('prezzo')
+    sconto20.innerHTML = prezzoScontoUnder 
+    console.log('eta inore di 18')
+}
+
+else {
+    let prezzoTrain = document.getElementById('prezzo')
+    prezzoTrain.innerHTML = prezzoBiglietto.toFixed(2)
+    console.log ('ttuo il resto')
+}
+
+
+// 7. Stampare in html il prezzo del biglietto
+
+    let etaTrain = document.getElementById('eta-utente')
+    etaTrain.innerHTML = eta
+
+    let kmTrain = document.getElementById('km')
+    kmTrain.innerHTML = kmPercorsi
+
+    let scontoTrain20 = document.getElementById('sconto20')
+    scontoTrain20.innerHTML = scontoUnder 
+
+    let scontoTrain40 = document.getElementById('sconto40')
+    scontoTrain40.innerHTML = scontoOver
+    
+
+
 
 // if (eta > 65) {
 //     let over65 = document.getElementById('prezzo-biglietto')
@@ -36,19 +70,4 @@ console.log (prezzoScontoOver)
 //     prezzo.innerHTML = prezzoBiglietto
 //     console.log('altri prezzi')
 // }
-
-// 7. Stampare in html il prezzo del biglietto
-
-
-
-if (eta > 65) {
-    console.log('eta maggiore di 65')
-}
-
-else if (eta < 18){
-    console.log('eta inore di 18')
-}
-
-else {
-    console.log ('ttuo il resto')
-}
+     

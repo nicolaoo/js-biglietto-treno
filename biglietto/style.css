@@ -1,0 +1,13 @@
+[class^=col] {
+    background-color: brown;
+    padding: 20px 40px;
+
+}
+
+.back-train {
+    background-image: url('./treno-montagne-natura-ferrovia-sfondo.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
